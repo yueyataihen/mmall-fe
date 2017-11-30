@@ -1,0 +1,22 @@
+/*
+* @Author: orange
+* @Date:   2017-11-30 15:36:43
+* @Last Modified by:   orange
+* @Last Modified time: 2017-11-30 15:41:13
+*/
+.footer {
+	padding-bottom: 10px;
+}
+.footer .links {
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+.footer .links .link {
+	padding: 0 10px;
+}
+.footer .copyright {
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
