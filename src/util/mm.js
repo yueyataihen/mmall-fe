@@ -2,7 +2,7 @@
 * @Author: orange
 * @Date:   2017-11-30 09:30:04
 * @Last Modified by:   orange
-* @Last Modified time: 2017-11-30 13:44:45
+* @Last Modified time: 2017-11-30 23:14:46
 */
 'use strict';
 var Hogan = require('hogan.js');
@@ -80,7 +80,7 @@ var _mm = {
     },
     // 统一登录处理
 	doLogin : function(){
-		window.location.href = './login.html?redirect='+encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect='+encodeURIComponent(window.location.href);
 	},
 	// 返回主页
 	goHome : function(){

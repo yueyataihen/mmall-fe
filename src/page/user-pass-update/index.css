@@ -1,0 +1,24 @@
+/*
+* @Author: orange
+* @Date:   2017-12-01 22:51:13
+* @Last Modified by:   orange
+* @Last Modified time: 2017-12-01 23:28:31
+*/
+.form-line {
+	line-height: 30px;
+	height: 30px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.form-line .label {
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+}
+.input {
+	line-height: 30px;
+	height: 30px;
+	width: 200px;
+	font-size: 14px;
+	padding-left: 5px;
+}
