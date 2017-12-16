@@ -1,15 +1,15 @@
 /*
 * @Author: orange
 * @Date:   2017-11-30 14:54:20
-* @Last Modified by:   orange
-* @Last Modified time: 2017-11-30 15:03:30
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-07 16:14:01
 */
 
 .nav-simple {
 	height: 60px;
 	line-height: 60px;
 	border-bottom: 1px solid #ddd;
-	background-position: #fff;
+	background: #fff;
 }
 .nav-simple .logo {
 	font-size: 26px;

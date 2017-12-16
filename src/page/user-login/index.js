@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-11-29 10:50:51
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-01 14:04:01
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-08 14:41:04
 */
 'use strict';
 require('./index.css');
@@ -34,7 +34,6 @@ var page = {
             // keyCode == 13 表示回车键
             if(e.keyCode === 13){
                 _this.submit();
-
             }
         });		
 	},

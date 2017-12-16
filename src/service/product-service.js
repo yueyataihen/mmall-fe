@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-12-03 16:23:10
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-03 17:39:20
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-12 15:17:53
 */
 
 
@@ -12,11 +12,10 @@ var _mm = require('util/mm.js');
 
 var _product = {
     // 获取商品列表
-    getProductList : function(userInfo, resolve, reject){
+    getProductList : function(listParam, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/product/list.do'),
-            data    : userInfo,
-            method  : 'POST',
+            data    : listParam,
             success : resolve,
             error   : reject
         });

@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-12-04 14:33:40
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-04 17:50:19
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-13 13:24:51
 */
 'use strick';
 
@@ -38,7 +38,7 @@ var page = {
     	});
     	// count的操作
     	$(document).on('click','.p-count-btn',function(){
-    		var type      = $(this).hasClass('plus') ? 'plus' : 'minus';
+    		var type      = $(this).hasClass('plus') ? 'plus' : 'minus',
     		    $pCount   = $('.p-count'),
     		    currCount = parseInt($pCount.val()),
     		    minCount  = 1,

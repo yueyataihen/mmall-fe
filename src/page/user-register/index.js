@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-12-01 12:10:08
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-01 14:17:33
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-09 17:17:04
 */
 'use strict';
 require('./index.css');
@@ -40,6 +40,7 @@ var page = {
                 formError.show(errMsg);
             });
         });
+    
         // 注册按钮的点击
         $('#submit').click(function(){
             _this.submit();
@@ -85,7 +86,7 @@ var page = {
 		var result = {
 			status : false,
 			msg    : ''
-		}
+		};
 		// 验证用户名是否为空
 		if(!_mm.validate(formData.username,'require')){
 			result.msg = '用户名不能为空';
@@ -106,16 +107,6 @@ var page = {
 			result.msg = '两次输入的密码不一致';
 			return result;
 		}
-		// 验证手机号是否为空
-		if(!_mm.validate(formData.phone,'require')){
-			result.msg = '手机号不能为空';
-			return result;
-		}
-		// 验证邮箱地址是否为空
-		if(!_mm.validate(formData.email,'require')){
-			result.msg = '邮箱地址不能为空';
-			return result;
-		} 
 		// 验证手机号
 		if(!_mm.validate(formData.phone,'phone')){
 			result.msg = '手机号格式不正确';
@@ -136,7 +127,6 @@ var page = {
 			result.msg = '密码提示问题答案不能为空';
 			return result;
 		} 
-
 
 		// 通过验证，返回正确提示
 		result.status = true;

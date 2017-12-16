@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-12-04 14:33:49
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-04 17:31:25
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-16 16:05:34
 */
 
 /*图片区*/
@@ -138,10 +138,11 @@
 .detail-wrap .detail-con {
 	padding-top: 20px;
 	background: #fff;
+	text-align: center;
 }
 .detail-wrap .detail-con img {
 	display: block;
-	margin: 0 auto;
+	margin: 10px auto;
 }
 /*错误信息*/
 .err-tip {

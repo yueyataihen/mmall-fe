@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-12-03 19:26:33
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-04 13:51:47
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-12 18:27:05
 */
 'use strict';
 require('./index.css');
@@ -37,11 +37,10 @@ Pagination.prototype.render = function(uesrOption){
    	   return;
     }
     // 判断是否只有1页
-    if(this.option.pages <1 ) {
+    if(this.option.pages <=1 ) {
    	   return;
     }
     // 渲染分页内容
-    //console.log(this.getPaginationHtml());
     this.option.container.html(this.getPaginationHtml());
 
 };
@@ -51,12 +50,12 @@ Pagination.prototype.getPaginationHtml = function(){
         option      = this.option,
         pageArray   = [],
         start       = option.pageNum - option.pageRange>0 
-            ? Pagination.prototype : 1,
+            ? option.pageNum - option.pageRange : 1,
         end         = option.pageNum + option.pageRange < option.pages
             ? option.pageNum + option.pageRange : option.pages;
     // 上一页按钮的数据
     pageArray.push({
-    	name      :'上一页',
+    	name      : '上一页',
     	value     : this.option.prePage,
     	disabled  : !this.option.hasPreviousPage
     });
@@ -67,7 +66,7 @@ Pagination.prototype.getPaginationHtml = function(){
 	    	value     : i,
 	    	active    : (i === option.pageNum)
         });
-    };
+    }
     // 下一页按钮的数据
     pageArray.push({
     	name      :'下一页',
@@ -82,4 +81,5 @@ Pagination.prototype.getPaginationHtml = function(){
     return html;
 };
 module.exports = Pagination;
+
 

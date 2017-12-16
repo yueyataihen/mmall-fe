@@ -1,8 +1,8 @@
 /*
-* @Author: orange
-* @Date:   2017-12-04 22:14:05
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-05 14:31:44
+* @Author: yueyataihen
+* @Date:   2017-12-05 14:31:44
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-14 14:25:10
 */
 
 'use strick';
@@ -132,7 +132,7 @@ var page = {
     	$(document).on('click','.btn-submit',function(){
     		// 总价大于0，进行提交
     		if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-    			window.location.href = './confirm.html';
+    			window.location.href = './order-confirm.html';
     		}
     		else {
     			_mm.errorTips('请选择商品后再提交');
@@ -159,7 +159,7 @@ var page = {
     	var cartHtml = _mm.renderHtml(templateIndex,data);
     	$('.page-wrap').html(cartHtml);
     	// 通知导航的购物车更新数量
-    	nav.loadCart();
+    	nav.loadCartCount();
 
     },
     // 删除指定商品，支持批量，productId用逗号分割
@@ -177,7 +177,7 @@ var page = {
     },
     // 显示错误信息
     showCartError: function(){
-        $('page-wrap').html('<p class="err-tip">哪里不对了，刷新一下购物车试试吧。</p>');
+        $('.page-wrap').html('<p class="err-tip">哪里不对了，刷新一下购物车试试吧。</p>');
     },   
 };
 

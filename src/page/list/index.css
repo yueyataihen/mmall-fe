@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-12-03 16:16:03
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-04 16:16:21
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-12 15:39:44
 */
 
 /*排序按钮*/
@@ -48,7 +48,6 @@
 .p-list-con .p-item {
 	position: relative;
 	width: 180px;
-	height: 320px;
 	float: left;
 	padding: 10px;
 	margin: 0 20px 20px 0;
@@ -70,6 +69,10 @@
 	font-size: 16px;
 	color: #e7380d;
 }
+.p-list-con .p-item .p-name-con {
+	height: 40px;
+	overflow: hidden;
+} 
 .p-list-con .p-item .p-name-con .p-name {
 	height: 20px;
 	margin-bottom: 10px;

@@ -1,0 +1,186 @@
+/*
+* @Author: yueyataihen
+* @Date:   2017-12-14 14:26:05
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-16 16:07:08
+*/
+.page-wrap .panel {
+	margin-bottom: 0;
+}
+.page-wrap .panel .panel-title {
+	font-size: 15px;
+	font-weight: bold;
+	color: #333;
+	line-height: 35px;
+	height: 35px;
+	border-bottom: 1px solid #ddd;
+}
+.address-item,
+.address-add {
+	margin: 20px 20px 0 0;
+	width: 200px;
+	padding: 5px 8px;
+	float:left;
+	border: 3px dashed #ccc;
+	cursor: pointer;
+}
+.address-item.active {
+	border: 3px dashed #c60023;
+}
+.address-item:hover,.address-add:hover {
+	background: #fafafa;
+}
+.address-item .address-title {
+	color: #666;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+.address-item .address-detail {
+	height: 40px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-top: 5px;
+	color: #666;
+}
+.address-item .address-opera {
+	visibility: hidden;
+	text-align: right;
+}
+.address-item:hover .address-opera {
+	visibility: visible;
+}
+.address-add .address-new {
+	padding: 8px 0;
+	color: #ccc;
+	text-align: center;
+}
+
+.address-add .address-new .fa {
+	font-size: 50px;
+	line-height: 50px;
+}
+.address-add .address-new .text {
+	font-size: 12px;
+}
+/*商品清单部分*/
+.product-table {
+	width: 100%;
+	margin: 10px 0;
+	border-collapse: collapse;
+}
+.product-table th,.product-table td {
+	border-bottom: 1px dotted #ddd;
+	padding: 5px;
+}
+.product-table .cell-img {
+	width: 10%;
+	text-align: center;
+}
+.product-table .cell-img .p-img {
+	width: 80px;
+	height: 80px;
+}
+.product-table .cell-info {
+	width: 30%;
+	text-align: left;
+}
+.product-table .cell-price {
+	width: 20%;
+	text-align: center;
+}
+.product-table .cell-count {
+	width: 20%;
+	text-align: center;
+}
+.product-table .cell-total {
+	width: 20%;
+	text-align: center;
+}
+/*订单提交*/
+.submit-con {
+	background: #eee;
+	text-align: right;
+}
+.submit-con .submit-total {
+	margin-right: 20px;
+	font-size: 18px;
+	color: #c60023;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.submit-con .order-submit {
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+}
+/*modal部分*/
+.modal {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #eee;
+	background: rgba(0,0,0,.4);
+	z-index: 1000;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.modal-container {
+	width: 700px;
+	margin: 50px auto;
+	background: #fff;
+	border-radius: 2px;
+}
+.modal-container .modal-header {
+	position: relative;
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.modal-container .modal-header .modal-title {
+	font-size: 14px;
+}
+.modal-container .modal-header .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	padding: 10px;
+	cursor: pointer;
+}
+.modal-container .modal-body {
+	padding: 15px;
+}
+/*form部分*/
+.form .form-line {
+	margin: 5px 0;
+	overflow: hidden;
+}
+.form .form-line .label {
+	display: block;
+	float: left;
+	width: 95px;
+	text-align: right;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.form .form-line .label .require {
+	color: red;
+}
+.form .form-line .form-item {
+	padding: 0 5px;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 10px;
+	outline: none;
+}
+.form .form-line .address-btn {
+	margin-left: 105px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+
+}

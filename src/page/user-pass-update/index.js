@@ -1,8 +1,8 @@
 /*
 * @Author: orange
 * @Date:   2017-12-01 22:51:56
-* @Last Modified by:   orange
-* @Last Modified time: 2017-12-01 23:32:02
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-11 15:45:42
 */
 
 'use strict';
@@ -31,8 +31,8 @@ var page = {
         // 点击提交按钮后的动作
         $(document).on('click', '.btn-submit', function(){
             var userInfo = {
-                password       : $.trim($('#password').val()),
-                passwordNew      : $.trim($('#password-new').val()),
+                password              : $.trim($('#password').val()),
+                passwordNew           : $.trim($('#password-new').val()),
                 passwordConfirm       : $.trim($('#password-confirm').val())               
             },
             validateResult = _this.validateForm(userInfo);
