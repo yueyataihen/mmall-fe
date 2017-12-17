@@ -2,7 +2,7 @@
 * @Author: yueyataihen
 * @Date:   2017-12-15 10:18:34
 * @Last Modified by:   yueyataihen
-* @Last Modified time: 2017-12-16 14:41:47
+* @Last Modified time: 2017-12-16 16:36:47
 */
 'use strick';
 
@@ -61,7 +61,7 @@ var addressModal = {
             	_mm.errorTips(receiverInfo.errMsg) || '好像哪里不对了';
             }
 		});
-		// 为了保证modal内容区的时候不关闭弹窗，
+		// 为了保证点击modal内容区的时候不关闭弹窗，
 		this.$modalWrap.find('.modal-container').click(function(e){
             e.stopPropagation();
 		});
