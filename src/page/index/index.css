@@ -2,7 +2,7 @@
 * @Author: orange
 * @Date:   2017-11-29 12:13:59
 * @Last Modified by:   yueyataihen
-* @Last Modified time: 2017-12-12 15:36:31
+* @Last Modified time: 2017-12-18 16:10:13
 */
 
 /*keywords-list*/
@@ -34,6 +34,7 @@
 
 /*banner-con*/
 .banner-con {
+	position: relative;
 	width: 830px;
 	background: #eee;
 	float: left;

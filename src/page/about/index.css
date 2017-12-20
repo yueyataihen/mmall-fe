@@ -1,0 +1,13 @@
+/*
+* @Author: yueyataihen
+* @Date:   2017-12-18 13:37:47
+* @Last Modified by:   yueyataihen
+* @Last Modified time: 2017-12-18 13:49:12
+*/
+.panel .panel-title {
+	padding-left: 20px;
+}
+.panel-body .about-con {
+	padding: 0 10px;
+	line-height: 25px;
+}
